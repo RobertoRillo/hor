@@ -18,7 +18,7 @@ const artists: Artist[] = [
   {
     id: '1',
     name: "Rarc",
-    image: "/rarc2.jpg",
+    image: "https://res.cloudinary.com/dlj39xvd0/image/upload/v1731445752/rarc1_ibjqxm.jpg",
     description: "Artista, Productor",
     location: "Guadalajara, MX",
     instagramLink: "https://instagram.com/rarc_mx",
@@ -28,7 +28,7 @@ const artists: Artist[] = [
   {
     id: '2',
     name: "Pineda",
-    image: "/pineda1.jpg",
+    image: "https://res.cloudinary.com/dlj39xvd0/image/upload/v1731445913/pineda1_wv3tbk.jpg",
     description: "Artista",
     location: "Cabo, MX",
     instagramLink: "https://instagram.com/pineda_mx",
@@ -38,7 +38,7 @@ const artists: Artist[] = [
   {
     id: '3',
     name: "Aldo de Anda",
-    image: "/aldo1.jpeg",
+    image: "https://res.cloudinary.com/dlj39xvd0/image/upload/v1731445574/aldo1_keuspi.jpg",
     description: "Artista",
     location: "Dubai, UAE",
     instagramLink: "https://instagram.com/aldodeandamx",
@@ -48,7 +48,7 @@ const artists: Artist[] = [
   {
     id: '4',
     name: "Käiburr",
-    image: "/kaiburr1.jpeg",
+    image: "https://res.cloudinary.com/dlj39xvd0/image/upload/v1731445575/kaiburr1_pkyizq.jpg",
     description: "Productor",
     location: "Guadalajara, MX",
     instagramLink: "https://instagram.com/kaiburrbeats",
@@ -58,7 +58,7 @@ const artists: Artist[] = [
   {
     id: '5',
     name: "Zaraa",
-    image: "/zaraa1.jpeg",
+    image: "https://res.cloudinary.com/dlj39xvd0/image/upload/v1731445575/zaraa1_inhfle.jpg",
     description: "Artista",
     location: "Guadalajara, MX",
     instagramLink: "https://instagram.com/zzaraa____",
@@ -70,7 +70,7 @@ const artists: Artist[] = [
 
 export default function ArtistCardsComponent() {
   return (
-    <section className="w-full h-full flex flex-col justify-center items-center py-12">
+    <section className="w-full flex flex-col justify-start items-center py-12 overflow-y-auto">
       {/* Grid con un máximo de 3 columnas y centrado */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 w-full max-w-6xl px-4 sm:px-6 lg:px-8 justify-items-center">
         {artists.map((artist) => (
@@ -109,7 +109,7 @@ export default function ArtistCardsComponent() {
                 {artist.name} 
                 {artist.sword && (
                   <img 
-                    src="/espada-optimized.png" 
+                    src="https://res.cloudinary.com/dlj39xvd0/image/upload/v1731441741/espada-optimized_amztwu.png" 
                     alt="Espada Icono" 
                     className="w-8 h-9 ml-2"
                   />
@@ -127,7 +127,6 @@ export default function ArtistCardsComponent() {
           </article>
         ))}
       </div>
-      
     </section>
   )
 }

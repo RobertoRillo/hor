@@ -12,7 +12,7 @@ export function Header({ onOpenSidebar }: HeaderProps) {
         <Menu size={24} />
       </button>
       {/* Imagen en lugar de texto */}
-      <img src="/hor-rezised.png" alt="Logo" className="h-20" /> {/* Ajusta el tamaño según sea necesario */}
+      <img src="favicon.ico" alt="Logo" className="h-20" /> {/* Ajusta el tamaño según sea necesario */}
       <div className="w-6"></div> {/* Placeholder para alineación */}
     </header>
   );
