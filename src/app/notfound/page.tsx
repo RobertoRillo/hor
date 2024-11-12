@@ -24,6 +24,7 @@ export default function NotFoundPage() {
                 <main className="flex flex-col items-center justify-center flex-grow text-center px-4">
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-500 mb-4">404</h1>
                     <p className="text-xl sm:text-2xl md:text-3xl mb-6">Not Found</p>
+                    <p className="text-xl sm:text-2xl md:text-3xl mb-6">Soon</p>
                     <p className="text-gray-400 text-base sm:text-lg">
                     </p>
                 </main>
