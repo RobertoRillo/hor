@@ -71,7 +71,8 @@ const artists: Artist[] = [
 export default function ArtistCardsComponent() {
   return (
     <section className="w-full h-full flex flex-col justify-center items-center py-12">
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+      {/* Grid con un máximo de 3 columnas y centrado */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 w-full max-w-6xl px-4 sm:px-6 lg:px-8 justify-items-center">
         {artists.map((artist) => (
           <article 
             key={artist.id} 
@@ -126,6 +127,7 @@ export default function ArtistCardsComponent() {
           </article>
         ))}
       </div>
+      
     </section>
   )
 }
