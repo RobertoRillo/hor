@@ -3,29 +3,17 @@ import React, { useState } from 'react';
 import { Sidebar } from '../components/sidebar';
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
+import BackgroundDecor from '../components/background';
 
 export default function NotFoundPage() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
     return (
-        <div className="min-h-screen flex flex-col bg-black text-gray-300 font-mono relative overflow-hidden bg-fixed bg-center bg-no-repeat bg-cover bg-[url('/espada-optimized.png')]">
-            {/* Fondo con ruido y decoraciones */}
-            <div className="fixed inset-0 bg-noise opacity-50 pointer-events-none"></div>
-            
-            {/* Imagen decorativa izquierda */}
-            <img 
-                src="/espada-optimized.png" 
-                alt="Espada izquierda" 
-                className="fixed left-0 top-1/4 h-64 transform -rotate-12 opacity-100 pointer-events-none"
-            />
+        <div className="min-h-screen flex flex-col bg-black text-gray-300 font-mono relative">
+            <div className="fixed inset-0 bg-fixed bg-center bg-no-repeat bg-cover bg-[url('https://res.cloudinary.com/dlj39xvd0/image/upload/v1731441741/espada-optimized_amztwu.png')]" />
 
-            {/* Imagen decorativa derecha */}
-            <img 
-                src="/espada-optimized.png" 
-                alt="Espada derecha" 
-                className="fixed right-0 top-1/4 h-64 transform rotate-12 opacity-100 pointer-events-none"
-            />
-            
+            <BackgroundDecor></BackgroundDecor>
+
             {/* Sidebar y contenido */}
             <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 

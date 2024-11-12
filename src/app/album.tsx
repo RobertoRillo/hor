@@ -26,20 +26,21 @@ export function AlbumContent() {
   return (
     <main className="container mx-auto px-4 py-8">
       <div className="max-w-2xl mx-auto">
-        <div className="relative mb-8 cursor-pointer hover:scale-105 transition-transform duration-300" onClick={handleImageClick}>
+        <div className="relative mb-9 cursor-pointer hover:scale-105 transition-transform duration-300" onClick={handleImageClick}>
           <img 
-            src={isCover ? "/COVERART_L2N1_V2.jpg" : "/contraportada_L2N1.jpg"} 
+            src={isCover ? "https://res.cloudinary.com/dlj39xvd0/image/upload/v1731446359/portadal2n1web_p5nc1e.jpg" : "https://res.cloudinary.com/dlj39xvd0/image/upload/v1731445481/contraportada_L2N1_mgqgwa.jpg"} 
             alt="Album Cover" 
             className="w-full h-auto rounded-lg shadow-lg transform -rotate-2 border-4 border-gray-800" 
             loading='lazy'
           />
-          <div className="absolute inset-0 bg-red-900 opacity-20 rounded-lg"></div>
         </div>
-
-        <h2 className="text-4xl font-bold mb-4 text-red-500 tracking-wide">LOS 2 NÚMERO 1</h2>
-        <p className="text-xl mb-6 leading-relaxed">L2N1 es mucho más que un EP; es la esencia de quienes somos como artistas y la expresión de nuestra visión compartida. Este proyecto no comenzó en el estudio de grabación, sino mucho antes, en la prepa, cuando un día después de clases nos juntamos a improvisar. En este EP, cada uno de nosotros aporta algo único y valioso, logrando crear algo auténtico y de calidad bajo el nombre Los 2 Número 1.</p>
-        
-        <div className="flex flex-wrap gap-4 mb-8">
+        <div className="bg-gray-900 rounded-lg p-8 mb-8 hover:scale-105 transition-transform duration-300 shadow-lg shadow-gray-900">
+          <h2 className="text-4xl font-bold mb-4 text-red-500 tracking-wide">LOS 2 NÚMERO 1</h2>
+          <p className="text-xl mb-6 leading-relaxed">
+            L2N1 es mucho más que un EP; es la esencia de quienes somos como artistas y la expresión de nuestra visión compartida. Este proyecto no comenzó en el estudio de grabación, sino mucho antes, en la prepa, cuando un día después de clases nos juntamos a improvisar. En este EP, cada uno de nosotros aporta algo único y valioso, logrando crear algo auténtico y de calidad bajo el nombre Los 2 Número 1.
+          </p>
+        </div>        
+        <div className="flex flex-wrap gap-5 mb-8">
           <a 
             href="https://distrokid.com/hyperfollow/rarcandpineda/los-2-nmero-1"
             target="_blank"
@@ -77,7 +78,7 @@ export function AlbumContent() {
           </div>
         ) : (
           <img
-            src="/l2n1cd-optimized.png"
+            src="https://res.cloudinary.com/dlj39xvd0/image/upload/v1731446357/cdwebcloudinary_yqrg7f.png"
             alt="Tracklist Image"
             className="w-full h-auto rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition-transform duration-300"
             onClick={handleTrackImageClick}

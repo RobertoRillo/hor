@@ -18,7 +18,7 @@ const artists: Artist[] = [
   {
     id: '1',
     name: "Rarc",
-    image: "/rarc2.jpg",
+    image: "https://res.cloudinary.com/dlj39xvd0/image/upload/v1731445752/rarc1_ibjqxm.jpg",
     description: "Artista, Productor",
     location: "Guadalajara, MX",
     instagramLink: "https://instagram.com/rarc_mx",
@@ -28,7 +28,7 @@ const artists: Artist[] = [
   {
     id: '2',
     name: "Pineda",
-    image: "/pineda1.jpg",
+    image: "https://res.cloudinary.com/dlj39xvd0/image/upload/v1731445913/pineda1_wv3tbk.jpg",
     description: "Artista",
     location: "Cabo, MX",
     instagramLink: "https://instagram.com/pineda_mx",
@@ -38,7 +38,7 @@ const artists: Artist[] = [
   {
     id: '3',
     name: "Aldo de Anda",
-    image: "/aldo1.jpeg",
+    image: "https://res.cloudinary.com/dlj39xvd0/image/upload/v1731445574/aldo1_keuspi.jpg",
     description: "Artista",
     location: "Dubai, UAE",
     instagramLink: "https://instagram.com/aldodeandamx",
@@ -48,7 +48,7 @@ const artists: Artist[] = [
   {
     id: '4',
     name: "Käiburr",
-    image: "/kaiburr1.jpeg",
+    image: "https://res.cloudinary.com/dlj39xvd0/image/upload/v1731445575/kaiburr1_pkyizq.jpg",
     description: "Productor",
     location: "Guadalajara, MX",
     instagramLink: "https://instagram.com/kaiburrbeats",
@@ -58,7 +58,7 @@ const artists: Artist[] = [
   {
     id: '5',
     name: "Zaraa",
-    image: "/zaraa1.jpeg",
+    image: "https://res.cloudinary.com/dlj39xvd0/image/upload/v1731445575/zaraa1_inhfle.jpg",
     description: "Artista",
     location: "Guadalajara, MX",
     instagramLink: "https://instagram.com/zzaraa____",
@@ -109,7 +109,7 @@ export default function ArtistCardsComponent() {
                 {artist.name} 
                 {artist.sword && (
                   <img 
-                    src="/espada-optimized.png" 
+                    src="https://res.cloudinary.com/dlj39xvd0/image/upload/v1731441741/espada-optimized_amztwu.png" 
                     alt="Espada Icono" 
                     className="w-8 h-9 ml-2"
                   />
