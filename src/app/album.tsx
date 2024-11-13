@@ -70,10 +70,11 @@ export function AlbumContent() {
           <div className="aspect-video relative mb-8">
             <iframe 
               className="absolute top-0 left-0 w-full h-full rounded-lg" 
-              src="https://www.youtube.com/embed/5er1CxNTBc8?autoplay=1" 
+              src="https://www.youtube.com/embed/qkL_9pLb_mE?si=ffP-cwmEbfS1B585"
               title="Video Player" 
               frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerPolicy="strict-origin-when-cross-origin" 
               allowFullScreen
             ></iframe>
           </div>
