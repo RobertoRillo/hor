@@ -25,7 +25,7 @@ export function AlbumContent() {
             loading="lazy"
           />
         </div>
-        <div className="bg-gray-900 rounded-lg p-8 mb-2 hover:scale-105 transition-transform duration-300 shadow-lg shadow-gray-900">
+        <div className="bg-gray-900 rounded-lg p-8 mb-4 hover:scale-105 transition-transform duration-300 shadow-lg shadow-gray-900">
           <h2 className="text-4xl font-bold mb-4 text-red-500 tracking-wide">LOS 2 NÚMERO 1</h2>
           <h2 className="text-xl font-bold mb-4 text-red-500 tracking-wide">29 Nov 2024</h2>
           <p className="text-xl mb-6 leading-relaxed">
