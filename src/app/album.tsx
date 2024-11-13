@@ -43,22 +43,23 @@ export function AlbumContent() {
             Pre-Save Now
           </a>
         </div>
-        <div className="flex justify-center items-center gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
           <div className="relative group">
             <img
               src="https://res.cloudinary.com/dlj39xvd0/image/upload/v1731446357/cdwebcloudinary_yqrg7f.png"
               alt="Tracklist Image"
-              className="w-80 h-80 rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition-transform duration-300"
+              className="w-40 h-40 sm:w-80 sm:h-80 rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition-transform duration-300"
               onClick={handleTrackImageClick}
               loading="lazy"
             />
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-2 px-6 py-2 rounded-full bg-red-700 text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-2 px-4 sm:px-6 py-1 sm:py-2 rounded-full bg-red-700 text-white text-xs sm:text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               Haz clic para ver el tráiler
             </div>
           </div>
-          <div className="w-auto h-60 bg-gray-800 rounded-lg p-5 shadow-lg hover:scale-105 transition-transform duration-300 shadow-gray-900">
-            <h3 className="text-xl font-bold mb-6 leading-relaxed text-red-500 tracking-wide">Tracklist</h3>
-            <ul className="list-decimal list-inside text-white text-sm leading-loose">
+          
+          <div className="w-full sm:w-auto h-auto sm:h-60 bg-gray-800 rounded-lg p-4 sm:p-5 shadow-lg hover:scale-105 transition-transform duration-300 shadow-gray-900">
+            <h3 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 leading-relaxed text-red-500 tracking-wide">Tracklist</h3>
+            <ul className="list-decimal list-inside text-white text-xs sm:text-sm leading-loose">
               <li>MORTAL PROD. KÄIBURR</li>
               <li>PROZAC PROD. NOVA</li>
               <li>LA MEXICANA PROD. RARC</li>
