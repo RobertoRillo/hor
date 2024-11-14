@@ -12,9 +12,9 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
   const navItems = [
     { label: 'Inicio', href: '/' },
     { label: 'Artistas', href: '/artists' },
-    { label: 'Merch', href: '/notfound' }, // Si no tienes página aún, crea una
-    { label: 'Galería', href: '/notfound' }, // Si no tienes página aún, crea una
-    { label: 'Shows', href: '/notfound' }, // Si no tienes página aún, crea una
+    { label: 'Merch', href: '/notfound', soon: true },
+    { label: 'Galería', href: '/notfound', soon: true },
+    { label: 'Shows', href: '/notfound', soon: true },
   ];
 
   return (
@@ -25,8 +25,9 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
         </button>
         <nav className="mt-8 space-y-4">
           {navItems.map((item) => (
-            <Link key={item.label} href={item.href} className="block text-lg hover:text-red-500 transition-colors duration-200">
-            {item.label}
+            <Link key={item.label} href={item.href} className="flex items-center text-lg hover:text-red-500 transition-colors duration-200">
+              <span>{item.label}</span>
+              {item.soon && <span className="ml-2 text-red-500 text-sm">soon</span>}
             </Link>
           ))}
         </nav>
